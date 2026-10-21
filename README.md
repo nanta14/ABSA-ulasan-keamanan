@@ -1,6 +1,6 @@
 # Register Robustness of IndoBERT and IndoBERTweet in Security-Aspect Sentiment Analysis
 
-Code, annotation resources, and aggregate results for the study **"Evaluating the Robustness of IndoBERT and
+Annotated data, code, annotation resources, and aggregate results for the study **"Evaluating the Robustness of IndoBERT and
 IndoBERTweet to Informal Register in Security-Aspect Sentiment Analysis of Indonesian Digital Finance App Reviews"**
 (master's thesis, Master of Information Technology, Faculty of Science and Technology, Universitas Islam Negeri Syarif
 Hidayatullah Jakarta, 2026; journal article under review).
@@ -45,15 +45,22 @@ hasil/
   ringkasan_pencarian.md     hyperparameter search (selected: lr 5e-5, batch 16, 3 epochs)
   utama/                     results with the selected configuration (used in the paper)
   konfigurasi_awal/          results with the initial configuration (lr 2e-5, batch 16, 4 epochs), sensitivity only
-data/README.md               data schema and availability
+data/                        the four annotated splits (person names masked)
+  latih.csv  pengembangan.csv  uji_takberpasangan.csv  uji_berpasangan.csv
+  README.md                  schema, masking procedure, hashes, terms of use
 ```
 
 ## Data availability
 
-The review texts are **not** included in this repository. They will be released for non-commercial research after
-person names inside the review text have been masked; until then they are available from the corresponding author
-upon reasonable request. User names, profile images, and review identifiers were discarded at collection. The expected
-file format is described in [`data/README.md`](data/README.md).
+The annotated corpus is included in [`data/`](data/): 3,258 reviews labelled for five aspect categories and for
+register, split into training, development, and unpaired test sets, plus the paired test set of 573 informal reviews
+with their formal normalizations. Person names written inside the review text were masked before release (22 spans in
+18 reviews); user names, profile images, and review identifiers were discarded at collection, and star ratings and
+application names are not included. Details are in [`data/README.md`](data/README.md). The data are for
+non-commercial research only.
+
+The reported results were computed on the text before masking, which differs from the released text only in the masked
+spans. The annotation guideline and the per-item predictions are available from the author on request.
 
 The colloquial lexicon used for the informality score is not redistributed here; use the original resource of
 Salsabila et al. (2018), *Colloquial Indonesian Lexicon* (IALP 2018).
@@ -102,8 +109,10 @@ unpaired test set and 156 of the 573 pairs were annotated without suggestions.
 
 ## Licence
 
-Code in `skrip/` is released under the MIT License (see [`LICENSE`](LICENSE)). Documentation, keyword lists, and
-result summaries are released under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/).
+Code in `skrip/` is released under the MIT License (see [`LICENSE`](LICENSE)). The annotations and normalizations in
+`data/`, documentation, keyword lists, and result summaries are released under
+[CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/); the review texts themselves were written by Google Play
+users and are shared for non-commercial research only (see [`data/README.md`](data/README.md#terms-of-use)).
 
 ## Citation
 
@@ -116,8 +125,9 @@ Aplikasi Keuangan Digital," Master's thesis, Universitas Islam Negeri Syarif Hid
 
 ## Ringkasan (Bahasa Indonesia)
 
-Repositori ini memuat skrip, daftar kata kunci, dan ringkasan hasil tesis *Evaluasi Ketahanan Register IndoBERT dan
-IndoBERTweet pada Analisis Sentimen Aspek Keamanan Aplikasi Keuangan Digital*. Teks ulasan belum dimuat; korpus akan
-dirilis untuk keperluan penelitian nonkomersial setelah nama orang di dalam teks disamarkan, dan sementara itu tersedia
-atas permintaan kepada penulis. Pembimbing: Ir. Nashrul Hakiem, S.Si., M.T., Ph.D. dan Khodijah Hulliyah, S.Kom.,
+Repositori ini memuat korpus beranotasi, skrip, daftar kata kunci, dan ringkasan hasil tesis *Evaluasi Ketahanan
+Register IndoBERT dan IndoBERTweet pada Analisis Sentimen Aspek Keamanan Aplikasi Keuangan Digital*. Folder `data/`
+berisi 3.258 ulasan berlabel lima kategori aspek dan register beserta 573 pasang teks takbaku–baku. Nama orang di dalam
+teks sudah disamarkan menjadi `[NAMA]` (22 penggalan pada 18 ulasan), dan data hanya untuk keperluan penelitian
+nonkomersial. Pedoman anotasi dan prediksi per butir tersedia atas permintaan kepada penulis. Pembimbing: Ir. Nashrul Hakiem, S.Si., M.T., Ph.D. dan Khodijah Hulliyah, S.Kom.,
 M.Si., Ph.D.
