@@ -1,0 +1,15 @@
+# data teks ulasan tidak dimuat di repositori publik
+data/*.csv
+data/**/*.csv
+# rahasia dan konfigurasi lokal
+.env
+*.key
+config_lokal.py
+# keluaran pelatihan dan cache
+keluaran*/
+skrip/keluaran*/
+*.bin
+*.safetensors
+__pycache__/
+.pytest_cache/
+.ipynb_checkpoints/
