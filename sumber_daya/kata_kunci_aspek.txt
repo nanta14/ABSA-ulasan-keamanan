@@ -1,0 +1,193 @@
+# Daftar kata kunci penyaringan aspek (Subbab 3.2.3), diambil dari config.py ASPEK[...]['kata_kunci']
+# asp_keamanan_akun (keamanan)
+bobol
+dibobol
+pembobolan
+retas
+diretas
+hack
+dihack
+hacker
+diambil alih
+ambil alih
+take over
+akun dibajak
+dibajak
+disusupi
+dijebol
+penipuan
+penipu
+tipu
+ditipu
+kena tipu
+menipu
+nipu
+scam
+scammer
+phising
+phishing
+modus
+link palsu
+tautan palsu
+aplikasi palsu
+apk palsu
+cs palsu
+admin palsu
+mengatasnamakan
+ngaku cs
+ngaku admin
+social engineering
+rekayasa sosial
+undangan apk
+kirim apk
+hadiah palsu
+korban
+hati hati
+waspada
+awas
+saldo raib
+saldo hilang
+uang hilang
+dana hilang
+duit hilang
+transaksi tidak dikenal
+transaksi asing
+transaksi aneh
+tidak saya lakukan
+bukan saya
+tanpa sepengetahuan
+diakses orang
+orang lain masuk
+tidak aman
+kurang aman
+gak aman
+ga aman
+rawan
+tidak terjamin
+keamanan buruk
+keamanan lemah
+mudah dibobol
+gampang dibobol
+keamanan kurang
+tingkatkan keamanan
+sistem keamanan
+keamanan akun
+khawatir
+kuatir
+was was
+waswas
+takut
+ngeri
+curiga
+mencurigakan
+aktivitas mencurigakan
+perangkat lain
+device lain
+login sendiri
+# asp_autentikasi (keamanan)
+otp
+kode otp
+kode verifikasi
+sms verifikasi
+pin
+password
+sandi
+kata sandi
+ganti pin
+lupa pin
+lupa password
+reset sandi
+biometrik
+sidik jari
+fingerprint
+face id
+verifikasi wajah
+face recognition
+scan wajah
+2fa
+autentikasi
+token
+m-token
+otentikasi
+verifikasi gagal
+kode tidak masuk
+kode telat
+# asp_privasi_data (keamanan)
+data bocor
+kebocoran data
+bocor
+data pribadi
+privasi
+izin akses
+akses kontak
+akses galeri
+akses lokasi
+akses kamera
+akses sms
+minta izin
+izin berlebihan
+ktp
+selfie ktp
+foto ktp
+kyc
+verifikasi identitas
+data disalahgunakan
+jual data
+data saya
+data nasabah
+data disebar
+informasi pribadi
+dihubungi terus
+spam
+telemarketing
+rahasia
+# asp_antarmuka (kontrol)
+tampilan
+desain
+ui
+antarmuka
+navigasi
+menu
+ribet
+membingungkan
+mudah digunakan
+user friendly
+simpel
+rapi
+berantakan
+susah dipahami
+enak dipakai
+gampang dipakai
+tata letak
+layout
+tombol
+# asp_keandalan (kontrol)
+gagal transfer
+transfer gagal
+gagal transaksi
+transaksi gagal
+pending
+dana nyangkut
+dana tertahan
+dana tidak masuk
+belum masuk
+double debit
+terpotong
+kepotong
+eror
+error
+galat
+gangguan
+maintenance
+lemot
+lambat
+berat
+force close
+keluar sendiri
+nutup sendiri
+loading lama
+sering error
+bug
+tidak bisa dibuka
+server down
+down
