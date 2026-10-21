@@ -1,10 +1,19 @@
-# data teks ulasan tidak dimuat di repositori publik
-data/*.csv
+# data: hanya empat berkas pembagian yang sudah disamarkan yang boleh masuk repositori
 data/**/*.csv
+!data/latih.csv
+!data/pengembangan.csv
+!data/uji_takberpasangan.csv
+!data/uji_berpasangan.csv
+# berkas yang tidak boleh dipublikasikan (memuat nama asli, rating, atau nama aplikasi per ulasan)
+daftar_penyamaran*.csv
+kunci_metadata*.csv
+data/mentah/
 # rahasia dan konfigurasi lokal
 .env
 *.key
+config.py
 config_lokal.py
+buat_usulan.py
 # keluaran pelatihan dan cache
 keluaran*/
 skrip/keluaran*/
